@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::before {
+  content: attr(data-text);
+  font-size: 10em;
+  font-weight: bold;
+  letter-spacing: 20px;
+}
